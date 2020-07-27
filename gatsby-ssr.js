@@ -38,6 +38,7 @@ function getAttributes() {
       key: "fonts",
       href: link,
       rel: "stylesheet",
+      crossOrigin: "anonymous",
     },
     option.attributes || {},
   ].reduce(function (r, o) {

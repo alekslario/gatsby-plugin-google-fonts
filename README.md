@@ -1,4 +1,6 @@
-# gatsby-plugin-google-fonts
+# gatsby-plugin-google-fonts-with-attributes
+
+This is a fork of didierfranc/gatsby-plugin-google-fonts + an option to set custom attributes.
 
 ## How to use it ?
 
@@ -13,7 +15,7 @@ Add some fonts to your `gatsby-config.js`:
 ```js
 module.exports = {
   siteMetadata: {
-    title: `I like Google fonts`
+    title: `I like Google fonts`,
   },
   plugins: [
     {
@@ -21,15 +23,17 @@ module.exports = {
       options: {
         fonts: [
           `limelight`,
-          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+          `source sans pro\:300,400,400i,700`, // you can also specify font weights and styles
         ],
-        display: 'swap'
-      }
-    }
-  ]
-}
+        display: "swap",
+        attributes: {
+          rel: "stylesheet preload prefetch",
+        },
+      },
+    },
+  ],
+};
 ```
-
 
 ## How to find great ideas ?
 
