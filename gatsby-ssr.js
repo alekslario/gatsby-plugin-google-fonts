@@ -27,12 +27,12 @@ function getDisplay(options) {
   return options.display ? "&display=" + options.display : "";
 }
 
-var link =
-  "https://fonts.googleapis.com/css?family=" +
-  getFonts(options) +
-  getDisplay(options);
+function getAttributes(options) {
+  var link =
+    "https://fonts.googleapis.com/css?family=" +
+    getFonts(options) +
+    getDisplay(options);
 
-function getAttributes() {
   return [
     {
       key: "fonts",
@@ -40,7 +40,7 @@ function getAttributes() {
       rel: "stylesheet",
       crossOrigin: "anonymous",
     },
-    option.attributes || {},
+    options.attributes || {},
   ].reduce(function (r, o) {
     Object.keys(o).forEach(function (k) {
       r[k] = o[k];
@@ -51,5 +51,7 @@ function getAttributes() {
 
 exports.onRenderBody = function (_ref, options) {
   var setHeadComponents = _ref.setHeadComponents;
-  setHeadComponents([_react2.default.createElement("link", getAttributes())]);
+  setHeadComponents([
+    _react2.default.createElement("link", getAttributes(options)),
+  ]);
 };
