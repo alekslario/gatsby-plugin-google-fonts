@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-google-fonts-with-attributes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Bring Google Fonts to Gatsby",
   "main": "index.js",
   "scripts": {
