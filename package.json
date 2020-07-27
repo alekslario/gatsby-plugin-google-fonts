@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-plugin-google-fonts",
-  "version": "1.0.1",
+  "name": "gatsby-plugin-google-fonts-with-attributes",
+  "version": "1.0.0",
   "description": "Bring Google Fonts to Gatsby",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/didierfranc/gatsby-plugin-google-fonts.git"
+    "url": "git+ssh://git@github.com:alekslario/gatsby-plugin-google-fonts-with-attributes.git"
   },
   "keywords": [
     "gatsby",
@@ -17,10 +17,10 @@
     "google",
     "fonts"
   ],
-  "author": "Didier Franc <dev@didierfranc.com>",
+  "author": "Aleksandrs Larionovs <https://github.com/alekslario>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/didierfranc/gatsby-plugin-google-fonts/issues"
+    "url": "https://github.com/alekslario/gatsby-plugin-google-fonts-with-attributes/issues"
   },
-  "homepage": "https://github.com/didierfranc/gatsby-plugin-google-fonts#readme"
+  "homepage": "https://github.com/alekslario/gatsby-plugin-google-fonts-with-attributes#readme"
 }
