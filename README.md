@@ -5,9 +5,9 @@ This is a fork of didierfranc/gatsby-plugin-google-fonts + an option to set cust
 ## How to use it ?
 
 ```js
-yarn add gatsby-plugin-google-fonts
+yarn add gatsby-plugin-google-fonts-with-attributes
 // or
-npm install gatsby-plugin-google-fonts --save
+npm i gatsby-plugin-google-fonts-with-attributes
 ```
 
 Add some fonts to your `gatsby-config.js`:
