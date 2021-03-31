@@ -52,6 +52,12 @@ function getAttributes(options) {
 exports.onRenderBody = function (_ref, options) {
   var setHeadComponents = _ref.setHeadComponents;
   setHeadComponents([
+    _react2.default.createElement("link", {
+      key: "google-fonts-preconnect",
+      rel: "preconnect",
+      href: "https://fonts.gstatic.com/",
+      crossOrigin: "anonymous",
+    }),
     _react2.default.createElement("link", getAttributes(options)),
   ]);
 };
